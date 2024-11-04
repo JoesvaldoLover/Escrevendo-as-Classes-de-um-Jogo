@@ -23,12 +23,11 @@ class character {
     constructor(name, age, typeData){
         this.name = name
         this.age = age
-        this.type = typeData.type
-        this.weapon = typeData.weapon
+        this.typeData = typeData
     }
 
     attack(){
-        console.log(`o ${this.type} atacou usando ${this.weapon}`)
+        console.log(`o ${this.typeData.type} atacou usando ${this.typeData.weapon}`)
     }
 }
 
